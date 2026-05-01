@@ -1,4 +1,4 @@
-use Lithe::{
+use lithe::{
     fmc_core::Term,
     interpreter::{Lexer, Parser},
 };

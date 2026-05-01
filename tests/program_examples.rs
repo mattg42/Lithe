@@ -1,4 +1,4 @@
-use Lithe::{
+use lithe::{
     fmc_core::Term,
     interpreter::Interpreter,
     machines::{
@@ -9,7 +9,7 @@ use Lithe::{
 };
 use std::fs;
 
-fn compile_program(program: &str, rnd: bool) -> Lithe::fmc_core::Term {
+fn compile_program(program: &str, rnd: bool) -> lithe::fmc_core::Term {
     Interpreter::new(true, MachineType::Stack)
         .compile(program.to_string(), false, rnd)
         .unwrap()

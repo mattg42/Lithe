@@ -1,5 +1,5 @@
 use criterion::{BenchmarkId, Criterion, criterion_group, criterion_main};
-use Lithe::{
+use lithe::{
     fmc_core::Term,
     interpreter::Interpreter,
     machines::{

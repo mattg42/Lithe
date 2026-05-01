@@ -1,6 +1,6 @@
 use clap::Parser;
-use Lithe::interpreter::Interpreter;
-use Lithe::machines::machine::{MachineType, StepResult};
+use lithe::interpreter::Interpreter;
+use lithe::machines::machine::{MachineType, StepResult};
 use miette::{IntoDiagnostic, Result, WrapErr, miette};
 use std::fs::File;
 use std::io::{BufRead, BufReader};
