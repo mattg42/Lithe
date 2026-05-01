@@ -1,0 +1,8 @@
+fn recurse(a) {
+    print($a);
+    if ($a > 0) {
+        recurse($a - 1);
+    }
+}
+
+recurse(3);

@@ -1,0 +1,21 @@
+n := input;
+i := 2;
+
+while ($i <= $n) {
+    isprime := true;
+
+    j := 2;
+    while ($j <= $i/2) {
+        if ($i % $j == 0) {
+            isprime := false;
+            break;
+        }
+        j := $j + 1;
+    }
+
+    if ($isprime) {
+        print $i;
+    }
+
+    i := $i + 1;
+}

@@ -1,0 +1,7 @@
+a := rnd_int(1, 10);
+
+guess := input;
+while ($guess != $a) {
+    print $guess == $a;
+    guess := input;
+}

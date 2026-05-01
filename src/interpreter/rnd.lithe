@@ -1,0 +1,9 @@
+fn rnd_bool() {
+  return \rnd_b<x>.[x].#\;
+}
+
+fn rnd_int(low, high) {
+  r := \rnd_f<x>.[x].#\;
+
+  return $low + int ( $r * ($high - $low + 1) );
+}
