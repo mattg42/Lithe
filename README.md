@@ -165,11 +165,6 @@ Run the full test suite:
 cargo test
 ```
 
-Important test files:
-
-- [tests/program_operators.rs](tests/program_operators.rs): end-to-end program tests on both machines
-- [tests/ast_roundtrip.rs](tests/ast_roundtrip.rs): pretty-print / raw-FMC round-trip tests
-
 ## Benchmarks
 
 Compile the benchmark target:
