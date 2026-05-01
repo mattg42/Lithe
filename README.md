@@ -1,6 +1,6 @@
 # Lithe
 
-Lithe is a small, lightweight surface language that compiles to FMC terms and runs on abstract machines.
+Lithe is a small, lightweight language that compiles to FMC terms and runs on abstract machines.
 
 This repository contains a Rust implementation of the Lithe compiler and interpreter. Programs can run on one of two machines:
 
@@ -140,7 +140,9 @@ Supported high-level features include:
 - recursion
 - `print`
 - `input`
-- embedded raw FMC terms using `\ ... \`
+
+Lithe embeds a raw FMC interpreter. These terms are treated as expression, and are entered using `\ ... \`. See [src/interpreter/rnd.lithe](src/interpreter/rnd.lithe) for an example.
+ embedded raw FMC terms using `\ ... \`
 
 The parser grammar lives in [src/interpreter/parser.rs](src/interpreter/parser.rs).
 
